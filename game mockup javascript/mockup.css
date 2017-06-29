@@ -1,0 +1,20 @@
+rect.bar {
+  fill: rgb(49, 163, 84);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2;
+}
+
+line.x-axis {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2;
+}
+
+text.x-axis {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+text.y-axis {
+  font-family: sans-serif;
+  font-weight: bold;
+}
