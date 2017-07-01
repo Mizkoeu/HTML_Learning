@@ -1,13 +1,14 @@
+
 * {
   font-family: Raleway, cursive, serif;
+  padding: 0;
+  margin: auto;
 }
 
 div.header {
-  height: 400px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: -10px;
-  left: 0;
+  top: 30px;
 }
 
 h1 {
@@ -19,55 +20,39 @@ h1 {
   background-origin: border-box;
   background-position: right top;
   background-repeat: no-repeat;
-  font-size: 80px;
+  font-size: 50px;
   color: Yellow;
-  padding: 100px;
+  padding: 100px 50px 100px 50px;
   z-index: 2;
-
 }
 
 div.intro {
   background-image: url("http://eskipaper.com/images/space-wallpaper-hd-3.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   height: 800px;
   font-size: 50px;
-  position: absolute;
+  position: relative;
+  top: 35px;
   width: 100%;
-  top: 50%;
-  left: 0;
 }
 
-p {
+#intro {
+  font-size: 24px;
   color: white;
   text-align: center;
   padding: 120px;
   margin: auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0 15%;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-  position: fixed;
-  left: -10px;
-  top: -2px;
+p {
+  padding: 15px 20%;
 }
 
-li {
-
-  display: inline;
-  float: left;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-li a:hover {
-    background-color: #111;
+.gameIntro {
+  position: relative;
+  top: 50px;
 }
 
 div.catalog {
@@ -80,8 +65,27 @@ div.catalog {
     display: block;
     color: white;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 10px;
     text-decoration: none;
+    display: inline;
+    float: left;
+    margin-left: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0 10%;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  left: -10px;
+  top: -2px;
+}
+
+li a:hover {
+    background-color: #111;
 }
 
 canvas {
@@ -95,23 +99,13 @@ button {
 }
 
 .sketch {
-  position: fixed;
-  top: 100px;
-  left: 0;
+  position: relative;
   margin: auto;
 }
 
-#intro {
-  font-size: 20px;
-}
-
-.info {
-  width: 48%;
-  position: absolute;
-  top: 200px;
-  right: 20px;
-}
-
 #game {
-  border: 2px solid black;
+  position: relative;
+  top: 80px;
+  margin: auto;
+  display: block;
 }

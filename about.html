@@ -2,13 +2,33 @@
 <html>
   <head>
     <title>About Me - Mike Zou</title>
+    <script src="p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900",
       rel="stylesheet">
   </head>
 
   <body>
-    <p>Hello, my name is Mike Zou. I'm very glad that you're visiting my site today.
-      Let me tell you all about my stories!</p>
+    <div class="catalog">
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="about.html">Portfolio</a></li>
+        <li><a href="Epidemic.html">Game Demo</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="gameIntro">
+      <p>Hello, my name is Mike Zou. This page is dedicated for some coding experiments.
+      I will temporarily put some random files here just for my own house keeping.
+      Hope you'll enjoy whatever is put up here!</p>
+      <p>Here's a game demo built from JavaScript. I'm still experimenting with the details.</p>
+    </div>
+
+    <div class="sketch">
+      <canvas id="game" width="400" height="400"></canvas>
+    </div>
+
 
 
 
