@@ -1,21 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ParticleEpi</title>
+    <title>Epidemic Alpha Game</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
     <link href="../style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900",
       rel="stylesheet">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/web build.json", {onProgress: UnityProgress});
-    </script>
   </head>
-  <body>
+  <body class="template">
     <div class="catalog">
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -28,16 +24,31 @@
     </div>
 
     <div class="gameBlob">
-      <p>Here's a Demo Game for testing data transfer with MongoDB. After completing the game,
-        please visit <a href="http://tanjimin.shinyapps.io/EpidemicDemoTable">Shiny App</a> to view your game data,
+      <p>Here's a Demo Game for testing data transfer with MongoDB. <strong>After completing the game,
+        please visit <a href="http://tanjimin.shinyapps.io/EpidemicDemoTable">Shiny App</a> to view your game data</strong>,
         including the number of games you have played so far and the historical data for the latest game.</p>
     </div>
 
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      </div>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="1067px"></canvas>
+      <br>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Epidemic</div>
     </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/DataTestingEpidemic.data",
+    codeUrl: "Release/DataTestingEpidemic.js",
+    asmUrl: "Release/DataTestingEpidemic.asm.js",
+    memUrl: "Release/DataTestingEpidemic.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
   </body>
 </html>

@@ -34,12 +34,13 @@ h3 {
 
 div.header {
   position: relative;
-  background-image: url("Mockingjay.png");
-  background-size: cover;
-  background-attachment: scroll;
+  /*background-image: url("Mockingjay.png");
+  background-size: cover;*/
+  /*background-attachment: scroll;
   background-origin: border-box;
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
+  background-color: forestgreen;
   width: 100%;
   min-height: 100%;
   top: 30px;
@@ -52,7 +53,6 @@ h1 {
   position: relative;
   top: 20vh;
   right: 27vw;
-
   font-size: 10vw;
   color: black;
   padding: 0;
@@ -179,8 +179,10 @@ iframe {
 
 /*Unity game*/
 div.gameBlob {
+  //border: 2px dashed black;
   position: relative;
   top: 86%;
+  width: 80%;
   height: 12%;
   z-index: 3;
 }
